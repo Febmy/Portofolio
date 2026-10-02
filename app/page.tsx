@@ -21,9 +21,14 @@ const projects = [
 ]
 
 const experience = [
-  { date: 'Sep 2026 — Present', company: 'YODU', role: 'Full-Stack Developer', detail: 'Vue.js, React, Next.js, Go, Python microservices, and technical documentation.' },
-  { date: 'Mar — Sep 2026', company: 'YODU', role: 'IT Support Officer', detail: 'System troubleshooting, technical writing, and UAT/QA testing support.' },
-  { date: 'Jan — Apr 2026', company: 'KodingData', role: 'Front-End Developer Intern', detail: 'Responsive front-end solutions, API integration, and UI improvements.' },
+  { date: 'Feb 2026 — Sep 2026', company: 'YODU', role: 'Full-Stack Developer', detail: 'Engineered portals and asset management systems using Vue.js, React, Next.js, and TypeScript. Developed REST APIs with Python and Golang.' },
+  { date: 'Jan 2026 — Apr 2026', company: 'KodingData', role: 'Front-End Developer', detail: 'Implemented responsive front-end solutions, integrating APIs, debugging, and maintaining high UI standards.' },
+  { date: 'Sep 2025 — Feb 2026', company: 'YODU', role: 'IT Support Officer', detail: 'Provided IT support, system troubleshooting, and backed up cross-functional roles including TW, BA, and QA testing.' },
+]
+
+const education = [
+  { date: 'Jun 2025 — Dec 2025', institution: 'Dibimbing.id', degree: 'Front-End Web Development Bootcamp', detail: 'Final Score: 93.77 (A+). Awarded Most Valuable Player & Best Portfolio Final Project.' },
+  { date: '2019 — 2024', institution: 'Institut Ilmu Sosial dan Ilmu Politik Jakarta', degree: "Bachelor's in International Relations", detail: 'GPA: 3.22/4.00' }
 ]
 
 export default function Page() {
@@ -95,7 +100,40 @@ export default function Page() {
 
       <section className="experience section-grid" id="experience">
         <div className="section-label">/ Experience</div>
-        <div className="experience-content"><h2>Where I&apos;ve<br /><em>been</em></h2><div className="timeline">{experience.map((item) => <div className="timeline-row" key={item.company + item.role}><span>{item.date}</span><div><h3>{item.company}</h3><p>{item.role}</p></div><p className="muted timeline-detail">{item.detail}</p></div>)}</div></div>
+        <div className="experience-content">
+          <h2>Where I&apos;ve<br /><em>worked</em></h2>
+          <div className="timeline">
+            {experience.map((item) => (
+              <div className="timeline-row" key={item.company + item.role}>
+                <span>{item.date}</span>
+                <div>
+                  <h3>{item.company}</h3>
+                  <p>{item.role}</p>
+                </div>
+                <p className="muted timeline-detail">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="experience section-grid" id="education">
+        <div className="section-label">/ Education</div>
+        <div className="experience-content">
+          <h2>Where I&apos;ve<br /><em>studied</em></h2>
+          <div className="timeline">
+            {education.map((item) => (
+              <div className="timeline-row" key={item.institution + item.degree}>
+                <span>{item.date}</span>
+                <div>
+                  <h3>{item.institution}</h3>
+                  <p>{item.degree}</p>
+                </div>
+                <p className="muted timeline-detail">{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="contact section-grid" id="contact"><div className="section-label">/ Start a conversation</div><div><h2>Have a good<br /><em>idea?</em></h2><a className="contact-link" href="mailto:febmysbaihaqi@gmail.com">febmysbaihaqi@gmail.com <ArrowUpRight /></a></div></section>
