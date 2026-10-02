@@ -21,9 +21,9 @@ const projects = [
 ]
 
 const experience = [
-  { date: 'Feb 2026 — Sep 2026', company: 'YODU', role: 'Full-Stack Developer', detail: 'Engineered portals and asset management systems using Vue.js, React, Next.js, and TypeScript. Developed REST APIs with Python and Golang.' },
+  { date: 'Nov 2026 — Present', company: 'YODU', role: 'Full-Stack Developer', detail: 'Engineered portals and asset management systems using Vue.js, React, Next.js, and TypeScript. Developed REST APIs with Python and Golang.' },
   { date: 'Jan 2026 — Apr 2026', company: 'KodingData', role: 'Front-End Developer', detail: 'Implemented responsive front-end solutions, integrating APIs, debugging, and maintaining high UI standards.' },
-  { date: 'Sep 2025 — Feb 2026', company: 'YODU', role: 'IT Support Officer', detail: 'Provided IT support, system troubleshooting, and backed up cross-functional roles including TW, BA, and QA testing.' },
+  { date: 'Sep 2025 — Nov 2026', company: 'YODU', role: 'IT Support Officer', detail: 'Provided IT support, system troubleshooting, and backed up cross-functional roles including TW, BA, and QA testing.' },
 ]
 
 const education = [
